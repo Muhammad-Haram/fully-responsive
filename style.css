@@ -1,0 +1,1044 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1b1c1e;
+}
+
+.para {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Roboto", sans-serif;
+    line-height: 20px;
+}
+
+.head1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+.normal {
+    padding: 20px 30px;
+    background-color: #037ef3;
+    border: 1px solid #037ef3;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    transition: all 0.5s;
+}
+
+#main {
+    background-image: url("https://preview.colorlib.com/theme/solicitor/images/hero_1.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+    background-position: center;
+    position: relative;
+}
+
+.black-layout {
+    width: 100%;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 120px;
+}
+
+.nav .logo h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.nav ul li {
+    list-style: none;
+    margin-right: 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: rgb(206, 206, 206);
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+.nav ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number .phone i {
+    color: white;
+    font-size: 10px;
+    background-color: #929292;
+    border: 1px solid #929292;
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.number .phone i:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.number p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/* mbl  */
+
+.mbl {
+    display: none;
+}
+
+.mbl i {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0f0f11;
+    color: #929292;
+}
+
+/* nav bar complete  */
+
+.main-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 35%;
+    position: absolute;
+    right: 90px;
+    margin-top: 60px;
+}
+
+.main-text .main-btn button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.main-text .main-btn button:nth-child(2):hover {
+    background-color: #ffff;
+    cursor: pointer;
+    color: black;
+}
+
+/* intro  */
+
+.intro {
+    background-color: #1b1c1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    width: 100%;
+    height: 110vh;
+    gap: 40px;
+}
+
+.intro .intro-text {
+    width: 40%;
+    padding: 60px;
+    padding-right: 0;
+    margin-left: 50px;
+}
+
+.intro .intro-img {
+    width: 60%;
+}
+
+.main-text h1,
+.intro .intro-text h1 {
+    margin-bottom: 30px;
+}
+
+.main-text p,
+.intro .intro-text p {
+    margin-bottom: 30px;
+}
+
+.intro .intro-text p {
+    width: 80%;
+}
+
+.intro .intro-text .p-text {
+    margin-bottom: 20px;
+    width: 80%;
+
+}
+
+.intro-img {
+    position: relative;
+}
+
+.intro-img img {
+    width: 70%;
+    margin-left: 110px;
+    position: absolute;
+    z-index: 2;
+    bottom: -250px;
+}
+
+.intro .intro-img .intro-block {
+    background-color: #0f0f11;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* services page  */
+#services {
+    background-color: #1f2022;
+    margin-bottom: 0;
+}
+
+#services .container {
+    padding: 50px 50px 0 50px;
+}
+
+#services .container h1 {
+    margin: 40px 0 60px 80px;
+}
+
+.services-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    gap: 50px;
+}
+
+.ser-card {
+    width: 30%;
+    margin-bottom: 60px
+}
+
+.ser-card .logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ser-card h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.ser-card p {
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.image img {
+    filter: invert(1);
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.block {
+    background-color: #037ef3;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+/* security page  */
+
+#security {
+    background-color: #1b1c1e;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 120px;
+    gap: 100px;
+}
+
+#security .sec-img h1 {
+    margin-bottom: 30px;
+}
+
+#security .sec-img img {
+    width: 700px;
+    border-radius: 5px;
+}
+
+#security .sec-text {
+    width: 40%;
+    margin-top: 50px;
+}
+
+#security .sec-text>* {
+    margin-bottom: 30px;
+}
+
+#security .sec-text h3 {
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+}
+
+/* tab  */
+
+#tabs {
+    padding: 120px;
+}
+
+.buttons {
+    width: 100%;
+    background-color: #1b1c1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #323335;
+}
+
+.buttons .tab-btn {
+    background-color: transparent;
+    width: 33%;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.5s;
+}
+
+.tab-btn:hover {
+    color: white;
+}
+
+.buttons .active {
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.tabcontent {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 30px;
+    display: none;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.tab-text {
+    width: 45%;
+}
+
+.tab-text p {
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.tab-text>* {
+    margin-bottom: 20px;
+}
+
+.tab-img {
+    width: 60%;
+}
+
+.tab-img img {
+    width: 100%;
+}
+
+/* practice area  */
+
+#practice {
+    padding: 120px;
+}
+
+.boxes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box {
+    width: 33%;
+    background-color: #0f0f11;
+    height: 150px;
+    transition: all 0.5s;
+    padding: 20px;
+    display: flex;
+}
+
+.box p {
+    margin-right: 20px;
+}
+
+.box p:nth-child(2) {
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.box:hover {
+    cursor: pointer;
+    background-color: #037ef3;
+}
+
+/* Testimonials */
+
+#Testimonials {
+    width: 100%;
+    padding: 120px 120px 0 120px;
+}
+
+#Testimonials h1 {
+    margin-bottom: 50px;
+}
+
+.tes-tabs {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tes-buttons {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tes-buttons .btn {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    font-family: "Roboto", sans-serif;
+    background-color: #1b1c1e;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.tes-buttons .react {
+    background-color: #037ef3;
+}
+
+.tes-buttons .btn .profile img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.tes-buttons .btn .name {
+    margin-left: 20px;
+}
+
+.tes-buttons .btn .name h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffff;
+    margin-bottom: 3px;
+}
+
+.tes-buttons .btn .name p {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.tes-content {
+    width: 50%;
+    font-family: "Roboto", sans-serif;
+}
+
+.tes-content .BoxContent p {
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.tes-content .BoxContent h5,
+h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.tes-content .BoxContent h6 {
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 5px;
+}
+
+/* form section  */
+
+#form-sec {
+    width: 100%;
+    padding: 0px 120px 120px 120px;
+}
+
+#form-sec h1 {
+    margin-bottom: 40px;
+}
+
+form {
+    width: 100%;
+}
+
+form>* {
+    margin: 1px;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input,
+textarea {
+    background-color: #1f2022;
+    outline: 0;
+    border: 0;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+input {
+    width: 49.6%;
+    margin: 2px;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #272829;
+}
+
+textarea {
+    width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+/* footer  */
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 120px 80px 120px;
+    font-family: "Roboto", sans-serif;
+}
+
+footer .foot h3 {
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+}
+
+footer .foot p {
+    font-size: 14px;
+    Color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .foot div i {
+    /* margin-right: 20px; */
+    font-size: 14px;
+    margin-top: 10px;
+    color: white;
+    background-color: #3d3d3d;
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+footer .foot div i:hover {
+    cursor: pointer;
+    background-color: #037ef3;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.links a,
+#creator span {
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    Color: rgba(255, 255, 255, 0.24);
+    border-bottom: 4px solid #037ff328;
+    transition: all 0.5s;
+    font-weight: 400;
+}
+
+.links a:hover,
+#creator span:hover {
+    Color: white;
+    border-bottom: 4px solid #037ef3;
+    cursor: pointer;
+}
+
+/* creator */
+
+#creator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    margin: 30px 0 100px 0;
+}
+
+#creator p {
+    color: #888888;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* responsive tab  */
+
+@media (max-width: 1024px) {
+
+    #main {
+        height: 90vh;
+    }
+
+    .nav {
+        padding: 30px 50px;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .mbl {
+        display: block;
+    }
+
+    .main-text {
+        width: 40%;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 20px 0;
+        height: 90vh;
+    }
+
+    .intro .intro-text {
+        width: 90%;
+        padding: 30px 30px;
+    }
+
+    .intro .intro-img {
+        width: 90%;
+    }
+
+    .intro-img {
+        margin-bottom: 40px;
+    }
+
+    .intro-img img {
+        margin-left: 50px;
+        bottom: -30px;
+    }
+
+    .intro .intro-img .intro-block {
+        position: static;
+    }
+
+    #services {
+        padding: 0 30px;
+    }
+
+    #services .container h1 {
+        margin: 0px 0px 50px 0px;
+    }
+
+    .services-cards {
+        margin: 0px;
+        gap: 0px;
+    }
+
+    .ser-card {
+        width: 50%;
+    }
+
+
+    #security {
+        flex-direction: column;
+        height: 60vh;
+        padding: 0px 70px;
+        gap: 0px;
+        margin: 80px 0;
+    }
+
+    #security .sec-img {
+        width: 90%;
+    }
+
+    #security .sec-img img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #security .sec-text {
+        width: 90%;
+    }
+
+    #tabs {
+        padding: 100px;
+    }
+
+    .tabcontent {
+        gap: 50px;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .tab-text {
+        width: 90%;
+    }
+
+    .tab-img {
+        width: 90%;
+    }
+
+
+    #practice {
+        padding: 80px;
+    }
+
+    .box {
+        width: 45%;
+        padding: 10px;
+    }
+
+
+    #Testimonials {
+        padding: 80px 80px 0 80px;
+    }
+
+    .tes-tabs {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .tes-buttons {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tes-buttons .btn {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        width: 400px;
+        font-family: "Roboto", sans-serif;
+        background-color: #1b1c1e;
+        cursor: pointer;
+        padding: 8px 15px;
+        border-radius: 5px;
+    }
+
+    .tes-buttons .react {
+        background-color: #037ef3;
+    }
+
+    .tes-buttons .btn .profile img {
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .tes-buttons .btn .name {
+        margin-left: 20px;
+    }
+
+    .tes-buttons .btn .name h4 {
+        font-size: 14px;
+        font-weight: 700;
+        color: #ffff;
+        margin-bottom: 3px;
+    }
+
+    .tes-buttons .btn .name p {
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .tes-content {
+        width: 90%;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .tes-content .BoxContent p {
+        font-size: 30px;
+        color: white;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .tes-content .BoxContent h5,
+    h6 {
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .tes-content .BoxContent h6 {
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 820px) {
+    .tes-tabs {
+        height: 70vh;
+        display: flex;
+    }
+}
+
+/* mbl  */
+
+@media (max-width: 450px) {
+
+    body{
+        /* overflow: hidden; */
+    }
+
+    .head1 {
+        font-size: 35px;
+    }
+
+    .normal {
+        padding: 15px 20px;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .mbl {
+        display: block;
+    }
+
+    .number {
+        display: none;
+    }
+
+
+    .main-text {
+        width: 70%;
+        right: 30px;
+        margin-top: 100px;
+    }
+
+    .intro {
+        padding: 0px 0;
+        height: 120vh;
+    }
+
+    .intro .intro-text {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .intro .intro-img {
+        width: 100%;
+    }
+
+    .intro-img {
+        margin-bottom: 100px;
+    }
+
+    .intro .intro-img .intro-block {
+        display: none;
+    }
+
+    #services {
+        padding: 0 10px;
+    }
+
+    #services .container {
+        padding: 20px 20px 0 20px;
+    }
+
+    .ser-card {
+        width: 100%;
+    }
+
+
+    #security {
+        flex-direction: column;
+        height: 80vh;
+        padding: 0px 20px;
+        gap: 0px;
+        margin: 40px 0 100px 0px;
+    }
+
+    #security .sec-img {
+        width: 100%;
+    }
+
+    #security .sec-img img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #security .sec-text {
+        width: 100%;
+    }
+
+
+    #tabs {
+        padding: 10px;
+    }
+
+    .tabcontent {
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    .tab-text {
+        width: 100%;
+    }
+
+    .tab-img {
+        width: 100%;
+    }
+
+
+    #practice {
+        padding: 5px;
+    }
+
+    #practice h1{
+        margin-left: 10px;
+    }
+
+    .box {
+        width: 48%;
+        padding: 10px;
+    }
+    
+    #Testimonials {
+        padding: 20px 20px 0 20px;
+        margin-bottom: 180px;
+    }
+
+    .tes-tabs {
+        height: 50vh;
+    }
+
+    .tes-buttons .btn {
+        width: 330px;
+    }
+
+    .tes-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tes-content .BoxContent p {
+        font-size: 15px;
+    }
+
+    .tes-content .BoxContent h5,
+    h6 {
+        font-size: 16px;
+    }
+
+    #form-sec {
+        padding: 0px 20px 20px 20px;
+    }
+    
+    input {
+        width: 100%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 100px;
+        padding: 30px 50px 30px 50px;
+        margin-top: 100px;
+    }
+
+    #creator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        margin: 50px 50px;
+    }
+
+}

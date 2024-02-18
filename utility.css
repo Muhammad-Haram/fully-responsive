@@ -1,0 +1,65 @@
+.para {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Roboto", sans-serif;
+}
+
+.head1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+.normal {
+    padding: 20px 30px;
+    background-color: #037ef3;
+    border: 1px solid #037ef3;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.main-text .main-btn button:nth-child(1):hover,
+.intro .intro-text button:hover,
+#security .sec-text button:hover,
+.tab-text button:hover,
+form button:hover {
+    background-color: #01519c;
+    cursor: pointer;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  /* Scrollbar Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the handle */
+    border-radius: 5px; /* Rounded corners of the handle */
+  }
+  
+  /* Scrollbar Track when hovering over it */
+  ::-webkit-scrollbar-track:hover {
+    background: #333; /* Color of the track on hover */
+  }
+  
+  /* Scrollbar Handle when hovering over it */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #444; /* Color of the handle on hover */
+  }
+  
+  /* Scrollbar Track */
+  ::-webkit-scrollbar-track {
+    background: #222; /* Color of the track */
+  }
+  
+  /* Scrollbar Handle when clicked */
+  ::-webkit-scrollbar-thumb:active {
+    background: #666; /* Color of the handle when clicked */
+  }
+  
+
+  
